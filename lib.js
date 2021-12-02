@@ -52,5 +52,87 @@
 // console.log(name);
 // console.log(company);
 
-var x = 80;
-console.log((x > 70) ? '合格' : '不合格');
+// var x = 80;
+// console.log((x > 70) ? '合格' : '不合格');
+
+// var msg = '';
+// msg = msg || 'こんにちは、世界！';
+// console.log(msg);
+
+// var ary = ['JavaScript', 'Ajax', 'ASP.NET'];
+// console.log(delete ary[0]);
+// console.log(ary);
+
+// var obj = {x:1, y:2};
+// console.log(delete obj.x);
+// console.log(obj.x);
+
+// var obj2 = {x:obj, y:2};
+// console.log(delete obj2.x);
+// console.log(obj);
+
+// var data1 = 1;
+// console.log(delete data1);
+// console.log(data1);
+
+// data2 = 10;
+// console.log(delete data2);
+// console.log(data2);
+
+// var num = 1;
+// console.log(typeof num);
+
+// var str = 'こんにちは';
+// console.log(typeof str);
+
+// var flag = true;
+// console.log(typeof flag);
+
+// var ary = ['JavaScrript', 'Ajax', 'ASP.NET'];
+// console.log(typeof ary);
+
+// var obj = {x:1, y:2};
+// console.log(typeof obj);
+
+// var x = 15;
+// if (x >= 10) {
+//   console.log('変数xは10以上です');
+// } else {
+//   console.log('変数xは10未満です');
+// }
+
+// var x = 30;
+// if (x >= 20) {
+//   console.log('変数xは20以上です');
+// } else if (x >= 10) {
+//   console.log('変数xは10以上です');
+// } else {
+//   console.log('変数xは10未満です');
+// }
+
+// var x = 20;
+// if (x >= 10) {
+//   if (x >= 20) {
+//     console.log('変数xは20以上です。');
+//   } else {
+//     console.log('変数xは10以上20未満です。');
+//   }
+// } else {
+//   console.log('変数xは10未満です。');
+// }
+
+// var x = 15;
+// if (x >= 10)
+//     console.log('変数xは10以上です。');
+// else
+//     console.log('変数xは10未満です。');
+
+var x = 1;
+var y = 2;
+if (x === 1) {
+  if (y === 1) {
+    comsole.log('変数x,yは共に1です。');
+  }
+} else {
+  console.log('変数xは1ではありません。')
+}
