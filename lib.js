@@ -127,12 +127,63 @@
 // else
 //     console.log('変数xは10未満です。');
 
-var x = 1;
-var y = 2;
-if (x === 1) {
-  if (y === 1) {
-    comsole.log('変数x,yは共に1です。');
-  }
-} else {
-  console.log('変数xは1ではありません。')
-}
+// var x = 1;
+// var y = 2;
+// if (x === 1) {
+//   if (y === 1) {
+//     comsole.log('変数x,yは共に1です。');
+//   }
+// } else {
+//   console.log('変数xは1ではありません。')
+// }
+
+// var rank = 'B';                         //このコードは冗長
+// if (rank === 'A') {
+//     console.log('Aランクです。');
+// } else if (rank === 'B') {
+//     console.log('Bランクです。');
+// } else if (rank === 'C') {
+//     console.log('Cランクです。');
+// } else {
+//     console.log('ランク外です');
+// }
+
+// var rank = 'B';
+// switch(rank) {
+//     case 'A' :
+//         console.log('Aランクです。');
+//         break;
+//     case 'B' :
+//         console.log('Bランクです。');
+//         break;
+//     case 'C' :
+//         console.log('Cランクです。');
+//         break;
+//     default :
+//         console.log('ランク外です');
+//         break;
+// }
+
+// var rank = 'B';     //break命令を略記して複数のブロックを実行する（フォールスルー）例外
+// switch(rank) {
+//     case 'A' :
+//     case 'B' :
+//     case 'C' :
+//         console.log('合格！');
+//         break;
+//     case 'D' :
+//         console.log('不合格...');
+//         break;
+// }
+
+// var data = {apple:150, orange:100, banana:120 };
+// for (var key in data) {
+//     console.log(key + '=' + data[key]);
+// }
+
+// var result = 0;
+// for (var i = 1; i <= 100; i++) {
+//     result += i;
+//     if (result > 1000) { break; }
+// }
+// console.log('合計値が1000を超えるのは' + i);
