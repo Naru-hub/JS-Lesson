@@ -187,3 +187,47 @@
 //     if (result > 1000) { break; }
 // }
 // console.log('合計値が1000を超えるのは' + i);
+
+// var result = 0;
+// for (var i = 0; i < 100; i++) {
+//   if (i % 2 === 0) { continue; }
+//   result += i;
+// }
+// console.log('合計:' + result);
+
+// for (var i = 1; i < 10; i++) {
+//   for (var j = 1; j < 10; j++) {
+//     var k = i * j
+//     if (k > 30) { break; }
+//     document.write(k + '&nbsp');
+//   }
+//   document.write('<br />');
+// }
+
+// kuku :
+//   for (var i = 1; i < 10; i++) {
+//     for (var j = 1; j < 10; j++) {
+//       var k = i * j
+//       if (k > 30) { break; }
+//       document.write(k + '&nbsp');
+//     }
+//     document.write('<br />');
+//   }
+
+// var i = 1;
+// try {
+//   i = i * j;                     //例外発生
+// } catch(e) {
+//   console.log(e.massage);
+// } finally {
+//   console.log('処理を完了しました。');
+// }
+
+// var x = 1;
+// var y = 0;
+// try {
+//   if (y === 0) { throw new Error('0で除算しようとしました。');}
+//   var z = x / y;
+// } catch(e) {
+//   console.log(e.message);
+// }
