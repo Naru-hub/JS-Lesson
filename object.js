@@ -1,0 +1,43 @@
+var ary1 = ['Sato', 'Takae', 'Osada', 'Hio', 'Saitoh', 'Sato'];
+var ary2 = ['Yabuki', 'Aoki', 'Moriyama', 'Yamada'];
+
+console.log(ary1.length);                    //6
+console.log(Array.isArray(ary1));            //true
+console.log(ary1.toString());                //Sato,Takae,Osada,Hio,Saitoh,Sato
+console.log(ary1.indexOf('Sato'));           //0
+console.log(ary1.lastIndexOf('Sato'));       //5
+
+console.log(ary1.concat(ary2));             //['Sato', 'Takae', 'Osada', 'Hio', 'Saitoh', 'Sato', 'Yabuki', 'Aoki', 'Moriyama', 'Yamada']
+console.log(ary1.join('/'));               //Sato/Takae/Osada/Hio/Saitoh/Sato
+console.log(ary1.slice(1));                 //['Takae', 'Osada', 'Hio', 'Saitoh', 'Sato']
+
+console.log(ary1.slice(1, 2));              //['Takae']
+
+console.log(ary1.splice(1, 2, 'Kakeya', 'Yamaguchi'));          //['Takae', 'Osada']  (置き換え対象の要素を取得)
+console.log(ary1);                      //['Sato', 'Kakeya', 'Yamaguchi', 'Hio', 'Saitoh', 'Sato']   (置き換え後の配列)
+
+console.log(Array.of(20, 40, 60));      //[20, 40, 60]
+
+console.log(ary1.copyWithin(1, 3, 5));    //['Sato', 'Hio', 'Saitoh', 'Hio', 'Saitoh', 'Sato'] (4~5番目の要素を2~3番目の位置へコピー)
+console.log(ary1);                         //['Sato', 'Hio', 'Saitoh', 'Hio', 'Saitoh', 'Sato'] (コピー後の配列)
+
+console.log(ary2.fill('Suzuki', 1, 3));   //['Yabuki', 'Suzuki', 'Suzuki', 'Yamada']  (2~3番目の要素を'Suzuki'で置換)
+console.log(ary2);                         //['Yabuki', 'Suzuki', 'Suzuki', 'Yamada'] (置換後の配列)
+
+console.log(ary1.pop());  //Sato 削除した要素
+console.log(ary1);         //['Sato', 'Hio', 'Saitoh', 'Hio', 'Saitoh'] 削除後の配列
+
+console.log(ary1.push('Kondo'));   //6   追加後の要素数
+console.log(ary1);                 // ['Sato', 'Hio', 'Saitoh', 'Hio', 'Saitoh', 'Kondo'] 追加後の配列
+
+console.log(ary1.shift());   //Sato  削除した要素
+console.log(ary1);          //['Hio', 'Saitoh', 'Hio', 'Saitoh', 'Kondo'] 削除後の配列
+
+console.log(ary1.unshift('Ozawa', 'Kuge'));      //7 追加後の要素数
+console.log(ary1);                               //['Ozawa', 'Kuge', 'Hio', 'Saitoh', 'Hio', 'Saitoh', 'Kondo']   追加後の配列
+
+console.log(ary1.reverse());                  // ['Kondo', 'Saitoh', 'Hio', 'Saitoh', 'Hio', 'Kuge', 'Ozawa'] 反転後の配列
+console.log(ary1);                            // ['Kondo', 'Saitoh', 'Hio', 'Saitoh', 'Hio', 'Kuge', 'Ozawa'] 反転後の配列
+
+console.log(ary1.sort());                  //['Hio', 'Hio', 'Kondo', 'Kuge', 'Ozawa', 'Saitoh', 'Saitoh'] ソート後の配列
+console.log();                             //['Hio', 'Hio', 'Kondo', 'Kuge', 'Ozawa', 'Saitoh', 'Saitoh'] ソート後の配列
