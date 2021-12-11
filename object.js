@@ -41,3 +41,76 @@ console.log(ary1);                            // ['Kondo', 'Saitoh', 'Hio', 'Sa
 
 console.log(ary1.sort());                  //['Hio', 'Hio', 'Kondo', 'Kuge', 'Ozawa', 'Saitoh', 'Saitoh'] ソート後の配列
 console.log();                             //['Hio', 'Hio', 'Kondo', 'Kuge', 'Ozawa', 'Saitoh', 'Saitoh'] ソート後の配列
+
+// var data = [];
+// data.push(1);
+// data.push(2);
+// data.push(3);
+// console.log(data.pop());   //3
+// console.log(data.pop());   //2
+// console.log(data.pop());   //1
+
+// var data = [];
+// data.push(1);
+// data.push(2);
+// data.push(3);
+// console.log(data.shift());  //1
+// console.log(data.shift());  //2
+// console.log(data.shift());  //3
+
+// var data = ['Sato', 'Takae', 'Osada', 'Hio', 'Saitoh'];
+
+// console.log(data.splice(3, 2, 'Yamada', 'Suzuki'));    //(2) ['Hio', 'Saitoh']
+// console.log(data);   // ['Sato', 'Takae', 'Osada', 'Yamada', 'Suzuki']
+
+// console.log(data.splice(3, 2));    //['Yamada', 'Suzuki']    範囲指定しなかったら指定された範囲の要素を削除
+// console.log(data);                 //['Sato', 'Takae', 'Osada']
+
+// console.log(data.splice(1, 0, 'Tanaka'));    //[]
+// console.log(data);                           //['Sato', 'Tanaka', 'Takae', 'Osada']  置き換えるべき要素数０の場合、引数indexで指定された位置に要素を挿入する
+
+// var data = [2, 3, 4, 5];
+// data.forEach(function(value, index, array) {
+//   console.log(value * value);              //[4, 9, 16, 25]
+// });
+
+// var data = [2, 3, 4, 5];
+// var result = data.map(function(value, index, array) {
+//   return value * value;
+// });
+// console.log(result);    //[4, 9, 16, 25]
+
+// var data = [4, 9, 16, 25];
+// var result = data.some(function(value, index, array) {
+//   return value % 3 === 0;
+// });
+
+// if (result) {
+//   console.log('3の倍数が見つかりました。');
+// } else {
+//   console.log('3の倍数が見つかりませんでした。');
+// }
+
+var data = [4, 9, 16, 25];
+var result = data.filter(function(value, index, array) {
+  return value % 2 === 1;
+});
+console.log(result);   //[9, 25]
+
+var ary = [5, 25, 10];
+console.log(ary.sort());             // [10, 25, 5]  文字列としてソート
+console.log(ary.sort(function(x, y) {
+  return x - y;                      //数値としてソート
+}));
+
+var classes = ['部長', '課長', '主任', '担当'];
+var members = [
+ {name: '鈴木清子', clazz: '主任'},
+ {name: '山口久雄', clazz: '部長'},
+ {name: '井上太郎', clazz: '担当'},
+ {name: '和田和美', clazz: '課長'},
+ {name: '小森雄太', clazz: '担当'},
+];
+console.log(members.sort(function(x, y) {
+  return classes.indexOf(x.clazz) - classes.indexOf(y.clazz);
+}))
