@@ -89,3 +89,81 @@
 // }
 
 // printf('こんにちは、{0}さん。私は{1}です。', '掛谷', '山田');
+
+// function getTraiangle(base = 1, height = 1) {
+//   return base * height / 2;
+// }
+// console.log(getTraiangle(5));  //2.5
+
+// function multi(a, b = a) {
+//   return a * b;
+// }
+
+// console.log(multi(10, 5));  //50
+// console.log(multi(3));      //9 (引数bの値はaと同じ3)
+
+// function multi(a = b, b = 5) {
+//   return a * b;
+// }
+// console.log(multi());  //ReferenceError
+
+// function getTraiangle(base = 1, height = 1) {
+//     return base * height / 2;
+//   }
+//   console.log(getTraiangle(5, undefined));  //2.5
+
+// function show(x, y = 1) {
+//   console.log('x = ' + x);
+//   console.log('y = ' + y);
+// }
+// show();     //x = undefined   y = 1
+
+// function required() {
+//   throw new Error('引数が不足しています');
+// }
+
+// function hoge(value = required()) {
+//   return value;
+// }
+// hoge();   //Error: 引数が不足しています
+
+
+// function sum(...nums) {
+//   let result = 0;
+//   for (let num of nums) {
+//     if (typeof num !== 'number') {
+//       throw new Error('指定値が数値ではありません:' + num);
+//     }
+//     result += num;
+//   }
+//   return result;
+// }
+
+// try {
+//   console.log(sum(1, 3, 5, 7, 9));    //25
+// } catch(e) {
+//   window.alert(e.message);
+// }
+
+
+// console.log(Math.max(15, -3, 78, 1));    //78
+// console.log(Math.max([15, -3, 78, 1]));  //NaN   配列を渡す場合はapplyメソッドを使う
+// console.log(Math.max.apply(null, [15, -3, 78, 1]));  //78
+// console.log(Math.max(...[15, -3, 78, 1]));    //78
+
+//分割代入
+// function getTriangle({base = 1, height = 1 }) {
+//   return base * height / 2;
+// }
+// console.log(getTriangle({ base:5, height:4 }));  //10
+
+//分割代入 特定のプロパティだけ取り出す
+function show({name}) {
+  console.log(name);
+};
+let member = {
+  mid: 'Y0001',
+  name: '山田太郎',
+  address: 't_yamada@example.com'
+};
+show(member);  //山田太郎
