@@ -158,12 +158,83 @@
 // console.log(getTriangle({ base:5, height:4 }));  //10
 
 //分割代入 特定のプロパティだけ取り出す
-function show({name}) {
-  console.log(name);
-};
-let member = {
-  mid: 'Y0001',
-  name: '山田太郎',
-  address: 't_yamada@example.com'
-};
-show(member);  //山田太郎
+// function show({name}) {
+//   console.log(name);
+// };
+// let member = {
+//   mid: 'Y0001',
+//   name: '山田太郎',
+//   address: 't_yamada@example.com'
+// };
+// show(member);  //山田太郎
+
+// function getMaxMin(...nums) {
+//   return [Math.max(...nums), Math.min(...nums)];
+// }
+
+// let result = getMaxMin(10, 35, -5, 78, 0);
+// console.log(result);[78, -5]
+
+// let[max, min] = getMaxMin(10, 35, -5, 78, 0);
+// console.log(max);  //78
+// console.log(min);  //-5
+
+// function factorial(n) {
+//   if (n != 0) { return n * factorial(n - 1); }
+//   return 1;
+// }
+// console.log(factorial(5));   //120
+
+//高階関数arrayWalkを定義
+// function arrayWalk(data, f) {
+//   for (var key in data) {
+//     f(data[key], key);
+//   }
+// }
+
+// //配列を処理するためのユーザー関数
+// function showElement(value, key) {
+//   console.log(key + ':' + value);
+// }
+
+// var ary = [1, 2, 4, 8, 16];
+// arrayWalk(ary, showElement);
+// 0:1
+// 1:2
+// 2:4
+// 3:8
+// 4:16
+
+// function arrayWalk(data, f) {
+//   for (var key in data) {
+//     f(data[key], key);
+//   }
+// }
+
+// var result = 0;
+// function sumElement(value, key) {
+//   result += value;
+// }
+// var ary = [1, 2, 4, 8, 16];
+// arrayWalk(ary, sumElement);
+// console.log('合計値:' + result); //合計値:31
+
+
+// function arrayWalk(data, f) {
+//   for (var key in data) {
+//     f(data[key], key);
+//   }
+// }
+
+// var ary = [1, 2, 4, 8, 16];
+// arrayWalk(
+//   ary,
+//   function (value, key) {
+//     console.log(key + ':' + value);
+//   }
+// );
+// 0:1
+// 1:2
+// 2:4
+// 3:8
+// 4:16
