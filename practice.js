@@ -43,7 +43,50 @@
 // }
 // console.log(getFirstChar("apple"));
 
-const popString = (str) => {
-  return str.slice(0, -1);
-}
-console.log(popString("apple"));
+// const popString = (str) => {
+//   return str.slice(0, -1);
+// }
+// console.log(popString("apple"));
+
+// const toggleBoolean = (valid) => {
+//   if (valid === true) {
+//     return false;
+//   } else {
+//     return true
+//   }
+// }
+// console.log(toggleBoolean(false));
+
+// const arr = ["apple", "orange", "melon"];
+// const answer = (arr) => {
+//   return arr.join(",");
+// }
+// console.log(answer(arr));
+
+// const answer = "あいうえお"; 
+
+// let answer = "あいうえお";  //再代入するときはlet
+// answer = "かきくけこ";
+// console.log(answer);
+
+//18
+// const str1 = "あいうえお";
+// const str2 = "かきくけこ";
+// const answer = str1 + str2;
+// console.log(answer);
+
+// const string = "あいうえお";
+// const str = string.replace('あ', 'お');
+// console.log(str);
+
+// const string = "あああああ";
+// string.replace(/あ/g, "お");
+
+//21
+// const str = "あいうえお";
+// const answer = str.split('');
+// console.log(answer);
+//別解
+// const str = 'あいうえお';
+// const answer = [...str];
+// console.log(answer);
