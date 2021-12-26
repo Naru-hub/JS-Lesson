@@ -90,3 +90,70 @@
 // const str = 'あいうえお';
 // const answer = [...str];
 // console.log(answer);
+
+// const object = {};
+
+//29
+// const object = {name: "Bob", "age": 20};
+
+// const getObjectName = object => object.name;
+// console.log(getObjectName(object));
+
+// object.name = 20;
+// console.log(getObjectName(object));
+
+// object.weight = "50kg";
+
+// delete obj.name;
+
+//33
+// const object = { 
+//   name: "Bob", 
+//   age: 20,
+//   hobby: ['reading', 'shopping'],
+// }
+
+// console.log(object.hobby[0]);  //reading
+// console.log(object.hobby[1]);  //shopping
+
+//34
+// const pet = {
+//   owner: "Bob",
+//   animals: ["dog", "cat"],
+//   getAnimals: function() {
+//     return this.owner + " has a " + this.animals[0] + " and a " + this.animals[1] + ".";
+//   }
+// }
+
+// console.log(pet.getAnimals());  //Bob has a dog and a cat.
+
+//35
+// const library = {
+//   openHour: "7am ~ 10pm"
+// }
+// console.log(library); //{openHour: '7am ~ 10pm'}
+// library.openHour = "8am ~ 9pm";
+// console.log(library); //{openHour: '8am ~ 9pm'}
+
+//36
+// const library = {
+//   book: {
+//     author: "Tom Sawyer",
+//     year: "11/12/2021"
+//   }
+// }
+// library.book.year = "10/22/1876"
+
+//38
+// const arr = [];
+// const arr = ["りんご", "みかん", "いちご"];
+// console.log(arr[1]); //みかん
+
+// const arr = ["りんご", "みかん", "いちご"];
+// arr[2] = "もも";
+// console.log(arr[2]); //もも
+
+//42
+// const arr = ["りんご", "みかん", "いちご"];
+// arr.push("すいか");
+// console.log(arr);  //['りんご', 'みかん', 'いちご', 'すいか']
