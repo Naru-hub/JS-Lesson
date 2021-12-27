@@ -156,4 +156,43 @@
 //42
 // const arr = ["りんご", "みかん", "いちご"];
 // arr.push("すいか");
-// console.log(arr);  //['りんご', 'みかん', 'いちご', 'すいか']
+// console.log(arr);  //['りんご', 'みかん', 'いちご', 'すいか']  配列の最後に追加(push)
+
+// const arr = ["りんご", "みかん", "いちご"];
+// arr.pop();
+// console.log(arr); //['りんご', 'みかん'] 配列の最後の要素削除(pop)
+
+// const arr = ["りんご", "みかん", "いちご"];
+// arr.unshift("すいか");
+// console.log(arr);  //['すいか', 'りんご', 'みかん', 'いちご'] 配列の最初に追加(unshift)
+
+//45
+// const arr = ["りんご", "みかん", "いちご"];
+// arr.shift();
+// console.log(arr);//['みかん', 'いちご'] 配列の最初の要素削除(shift)
+
+// const arr = ["りんご", "みかん", "いちご"];
+// arr.reverse();
+// console.log(arr);  //['いちご', 'みかん', 'りんご']  配列を逆順にする(reverse)
+
+//47
+// const array = ["りんご", "みかん", "いちご"];
+// const answer = array.indexOf("みかん");
+// console.log(answer);  //1
+
+// const array = ["りんご", "みかん", "いちご"];
+// const answer = array.includes("りんご");
+// console.log(answer); //true
+
+//49
+// const array = ["りんご", "みかん", "いちご"];
+// const answer = array.slice(1, 3);
+// console.log(answer);  //['みかん', 'いちご'] 2番目と3番目の要素からなる配列
+
+//50
+// const array = ["りんご", "みかん", "いちご"];
+// const answer = array.splice(2,1);
+// console.log(array);
+
+
+
