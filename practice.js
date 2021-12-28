@@ -194,5 +194,65 @@
 // const answer = array.splice(2,1);
 // console.log(array);
 
+// const fruits = ["apple", "orange", "grape"];
+// const answer = fruits.forEach(fruit => {
+//   console.log(fruit);
+// })
+//apple
+//orange
+//grape
+
+// const numbers = [1, 2, 3];
+// const doubleNumbers = numbers.map(number => {
+//   return number * 2;
+// })
+// console.log(doubleNumbers);  //[2, 4, 6]
+
+//53
+// const numbers = [1, 2, 3];
+// const tripleNumbers = numbers.map(number => {
+//   return number * 3;
+// })
+// console.log(tripleNumbers);  //[3, 6, 9]
+
+// const fruits = ["apple", "grape", "fig"];
+// const answer = fruits.filter(fruit => {
+//   return fruit.length === 3;
+// })
+// console.log(answer);  //['fig'] 配列の中で３文字要素のみの配列を取得する
+
+// const array = ["いぬ", "さる", "きじ"];
+// console.log(array.sort()); //['いぬ', 'きじ', 'さる']
+
+// const array = [1975, 11, 20];
+// console.log(array.sort((a,b)=>a-b));  // [11, 20, 1975]
+
+// const array = [1975, 11, 20];
+// console.log(array.sort((a,b)=>b-a));  //[1975, 20, 11]
+
+// const array = [1, 2, 3, 4, 5];
+// const result = array.reduce((sum, current) => sum + current, 0);
+// console.log(result);  //15
+
+// const array = ["りんご", "みかん", "いちご"];
+// console.log(array.join(','));    //りんご,みかん,いちご
+
+//60
+// const array = "Hi my name is Bob!";
+// console.log(array.split(' '));   //['Hi', 'my', 'name', 'is', 'Bob!']
+
+// const array = [1, 2, 3, 4, 5];
+// const arrayClone = [...array];
+// console.log(arrayClone);     //[1, 2, 3, 4, 5]
+
+// const array = [1, 2, 3, 4, 5];
+// const array2 = [...array, 6, 7, 8, 9, 10];
+// console.log(array2);    //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//63
+const array = [1, 2, 3, 4, 5];
+const array2 = [6, 7, 8, 9, 10];
+const array3 = [...array, ...array2];
+console.log(array3);   //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
